@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<style type="text/css">
+		
+		#xxx , #xxx td, #xxx td {
+
+
+			border-collapse: collapse;
+
+			border: 1px solid:#333333;
+
+			font-family: tahoma, 굴림, 돋움, verdana;
+
+	}
+
+	</style>
+
+	<script type="text/javascript">
+		
+
+		var name = document.memRegForm.name.value;
+
+
+
+
+
+	</script>
+
+
+
+
+</head>
+<body>
+
+	<form name="memRegForm"
+		  action="http://www.naver.com"
+		  metdod="post"
+		  enctype="multipart/form-data" 
+	>	
+	</form>
+
+	<table border="1" cellpadding="5" id="xxx">
+
+		<caption>[회원등록]</caption>
+
+
+			<!--1행-->
+		<tr bgcolor="#777777">
+			<td colspan="2" ><font color="white">*기본정보</font></td>
+			<!-- <td></td> -->
+			
+		</tr>
+
+			<!--2행-->
+		<tr>
+			<td bgcolor="#DCDCDC"><font color="orange">*</font>이름</td>
+			<td>
+				<input type="text" name="uname">
+			</td>
+		</tr>
+			<!--3행-->
+		<tr>
+			<td bgcolor="#DCDCDC"><font color="orange">*</font>아이디</td>
+			<td>
+				<input type="text" name="uid"> [중복체크여부]
+				
+			</td>
+		</tr>
+			<!--4행-->
+		<tr>
+			<td bgcolor="#DCDCDC"><font color="orange">*</font>암호</td>
+			<td>
+				<input type="text" name="pwd"> 
+				<font color="orange">*</font>암호확인<input type="text" name="pwdConf">
+			</td>
+		</tr>
+			<!--5행-->
+		<tr>
+			<td colspan="2" bgcolor="#777777"><font color="white">*개인정보</font></td>
+			<!-- <td></td> -->
+
+
+
+		</tr>
+			<!--6행-->
+		<tr>
+			<td bgcolor="#DCDCDC">주민번호</td>
+			<td>
+				<input type="text" name="jumin1"> - 
+				<input type="text" name="jumin2">
+			</td>
+		</tr>
+			<!--7행-->
+		<tr>
+			<td bgcolor="#DCDCDC">주소</td>
+			<td>
+				<input type="text" name="adress">
+			</td>
+		</tr>
+			<!--8행-->
+		<tr>
+			<td bgcolor="#DCDCDC">최종학력</td>
+			<td>
+				<select name="school">
+					<option value="중졸">중졸</option>
+					<option value="고졸">고졸</option>
+					<option value="대졸">대졸</option>
+				</select>
+			</td>
+		</tr>
+			<!--9행-->
+		<tr>
+			<td bgcolor="#DCDCDC">성별</td>
+			<td>
+				<input type="radio" name="gender" value="1">남성
+				<input type="radio" name="gender" value="2">여성
+			</td>
+		</tr>
+			<!--10행-->
+		<tr>
+			<td bgcolor="#DCDCDC">관심분야</td>
+			<td>
+				<input type="checkbox" name="favorite" value="정치">정치
+				<input type="checkbox" name="favorite" value="경제">경제
+				<input type="checkbox" name="favorite" value="사회">시회
+				<input type="checkbox" name="favorite" value="문화">문화
+
+			</td>
+		</tr>
+			<!--11행-->
+		<tr>
+			<td bgcolor="#DCDCDC">사진</td>
+			<td>
+				<input type="file" name="pic">
+			</td>
+		</tr>
+			<!--12행-->
+		<tr>
+			<td bgcolor="#DCDCDC">자기소개</td>
+			<td>
+				<textarea name="introduce" cols="50" rows="10"></textarea>
+			</td>
+		</tr>
+
+
+
+
+
+	</table>
+
+</body>
+</html>
